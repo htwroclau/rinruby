@@ -1,5 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 puts "RinRuby #{RinRuby::VERSION} specification"
+R = RinRuby.new unless Object.const_defined?(:R)
 
 describe RinRuby do
   describe "on init" do
